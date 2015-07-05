@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #fee000;
+        }
+        #fan {
+            -webkit-transition-duration: 1.0s;
+            -moz-transition-duration: 1.0s;
+            -o-transition-duration: 1.0s;
+            transition-duration: 1.0s;
+        }
+        #fan.rotate {
+
+            -webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            -ms-transform:rotate(360deg);   
+        }
+        #fancontainer {
+        }
+    </style>
+    <script>
+        $(function () {
+            $("#fan").addClass("rotate");
+        });
+    </script>
+</head>
+<body>
+    <a href="https://github.com/geck1942"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"></a>
+        <div class="container-fluid center-block" id="main">
+        <h1 class="text-center">Feeling hot?</h1>
+        <h2 class="text-center">Press <kbd>F5</kbd> to refresh</h2>
+        <img id="fan" src="img/fan.svg" alt="this is a huge fan" class="img-responsive center-block" />
+        <div id="fancontainer" class="container">
+        </div>
+    </div>
+</body>
+</html>
